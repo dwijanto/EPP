@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="oExCon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQLhon03nt;</Value>
+    </Setting>
+    <Setting Name="smtpclient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.seb.com</Value>
+    </Setting>
+    <Setting Name="oExConLive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQLhon03nt;</Value>
+    </Setting>
+    <Setting Name="oExConDev" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQLhon14nt;</Value>
+    </Setting>
+    <Setting Name="conDev" Type="System.String" Scope="User">
+      <Value Profile="(Default)">host=localhost;port=5432;database=LogisticDb20140616;commandTimeout=1000;TimeOut=1000</Value>
+    </Setting>
+    <Setting Name="conLive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;TimeOut=1000</Value>
+    </Setting>
+    <Setting Name="smtpclientold" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172.22.10.2</Value>
+    </Setting>
+    <Setting Name="TimerInterval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1800000</Value>
+    </Setting>
+    <Setting Name="TimerOn" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="smtpclienold2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">honsmtp.as.seb.com</Value>
+    </Setting>
+    <Setting Name="Connectionstring1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;TimeOut=1000&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;TimeOut=1000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

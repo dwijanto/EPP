@@ -1,0 +1,18 @@
+2013-04-18 09:16:21.626 AM	****** Start Logging ******
+2013-04-18 09:16:21.642 AM	FormScheduller_Load	Start Scheduller
+2013-04-18 09:16:21.642 AM	cutoffscheduller	Start Cutoff
+2013-04-18 09:16:21.689 AM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-04-18 09:16:21.689 AM	cutoffscheduller	End Cutoff
+2013-04-18 09:16:21.689 AM	reminderscheduller	Start Reminder
+2013-04-18 09:16:21.970 AM	DoWork	Nothing to send.
+2013-04-18 09:16:21.970 AM	reminderscheduller	End Reminder
+2013-04-18 09:16:21.986 AM	orderCollectionscheduller	Start OrderCollection
+2013-04-18 09:16:22.001 AM	DoWork	Nothing to send.
+2013-04-18 09:16:22.001 AM	orderCollectionscheduller	End OrderCollection
+2013-04-18 09:16:22.001 AM	FormScheduller_Load	End Scheduller
+2013-06-14 09:09:44.160 AM	FormScheduller_Load	Start Scheduller
+2013-06-14 09:09:44.191 AM	FormScheduller_Load	End Scheduller
+2013-06-14 09:10:23.462 AM	FormScheduller_Load	Start Scheduller
+2013-06-14 09:10:23.493 AM	FormScheduller_Load	End Scheduller
+2013-06-14 09:12:00.358 AM	FormScheduller_Load	Start Scheduller
+2013-06-14 09:12:00.374 AM	FormScheduller_Load	End Scheduller

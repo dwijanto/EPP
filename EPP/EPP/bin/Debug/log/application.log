@@ -1,0 +1,168 @@
+2013-04-10 03:57:03.667 PM	****** Start Logging ******
+2013-04-10 03:57:03.683 PM	FormScheduller_Load	Start Scheduller
+2013-04-10 03:57:03.683 PM	cutoffscheduller	Start Cutoff
+2013-04-10 03:57:03.698 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-04-10 03:57:03.698 PM	cutoffscheduller	End Cutoff
+2013-04-10 03:57:03.698 PM	reminderscheduller	Start Reminder
+2013-04-10 03:57:03.714 PM	DoWork	Nothing to send.
+2013-04-10 03:57:03.730 PM	reminderscheduller	End Reminder
+2013-04-10 03:57:03.745 PM	orderCollectionscheduller	Start OrderCollection
+2013-04-10 03:57:03.761 PM	DoWork	Nothing to send.
+2013-04-10 03:57:03.761 PM	orderCollectionscheduller	End OrderCollection
+2013-04-10 03:57:03.761 PM	FormScheduller_Load	End Scheduller
+2013-04-18 12:37:40.105 PM	FormScheduller_Load	Start Scheduller
+2013-04-18 12:37:40.136 PM	cutoffscheduller	Start Cutoff
+2013-04-18 12:37:40.183 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-04-18 12:37:40.183 PM	cutoffscheduller	End Cutoff
+2013-04-18 12:37:40.183 PM	reminderscheduller	Start Reminder
+2013-04-18 12:37:40.214 PM	DoWork	Nothing to send.
+2013-04-18 12:37:40.214 PM	reminderscheduller	End Reminder
+2013-04-18 12:37:40.214 PM	orderCollectionscheduller	Start OrderCollection
+2013-04-18 12:37:40.246 PM	DoWork	Nothing to send.
+2013-04-18 12:37:40.246 PM	orderCollectionscheduller	End OrderCollection
+2013-04-18 12:37:40.246 PM	FormScheduller_Load	End Scheduller
+2013-04-25 04:11:53.397 PM	DoWork	bs.Filter =
+2013-06-11 08:50:54.734 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-11 08:55:44.734 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-11 09:03:49.250 AM	docutoff	Send Mail success
+2013-06-11 09:03:49.265 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-11 10:52:35.923 AM	FormScheduller_Load	Start Scheduller
+2013-06-11 10:52:35.954 AM	cutoffscheduller	Start Cutoff
+2013-06-11 10:53:09.242 AM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-06-11 10:53:09.242 AM	cutoffscheduller	End Cutoff
+2013-06-11 10:53:09.242 AM	reminderscheduller	Start Reminder
+2013-06-11 10:53:46.545 AM	DoWork	Nothing to send.
+2013-06-11 10:54:08.649 AM	reminderscheduller	End Reminder
+2013-06-11 10:54:30.924 AM	orderCollectionscheduller	Start OrderCollection
+2013-06-11 10:55:05.993 AM	DoWork	Nothing to send.
+2013-06-11 10:55:16.506 AM	orderCollectionscheduller	End OrderCollection
+2013-06-11 10:55:25.504 AM	FormScheduller_Load	End Scheduller
+2013-06-11 10:55:45.639 AM	FormScheduller_Load	Start Scheduller
+2013-06-11 10:55:45.654 AM	cutoffscheduller	Start Cutoff
+2013-06-11 10:56:31.252 AM	cutoffscheduller	End Cutoff
+2013-06-11 10:56:42.577 AM	reminderscheduller	Start Reminder
+2013-06-11 10:56:48.419 AM	DoWork	Nothing to send.
+2013-06-11 10:56:48.419 AM	reminderscheduller	End Reminder
+2013-06-11 10:56:48.419 AM	orderCollectionscheduller	Start OrderCollection
+2013-06-11 10:56:48.451 AM	DoWork	Nothing to send.
+2013-06-11 10:56:48.451 AM	orderCollectionscheduller	End OrderCollection
+2013-06-11 10:56:50.591 AM	FormScheduller_Load	End Scheduller
+2013-06-11 10:57:36.658 AM	FormScheduller_Load	Start Scheduller
+2013-06-11 10:57:36.674 AM	cutoffscheduller	Start Cutoff
+2013-06-11 10:57:43.938 AM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-06-11 10:57:43.938 AM	cutoffscheduller	End Cutoff
+2013-06-11 10:57:43.938 AM	reminderscheduller	Start Reminder
+2013-06-11 10:57:43.969 AM	DoWork	Nothing to send.
+2013-06-11 10:57:43.969 AM	reminderscheduller	End Reminder
+2013-06-11 10:57:43.969 AM	orderCollectionscheduller	Start OrderCollection
+2013-06-11 10:57:43.984 AM	DoWork	Nothing to send.
+2013-06-11 10:57:43.984 AM	orderCollectionscheduller	End OrderCollection
+2013-06-11 10:57:43.984 AM	FormScheduller_Load	End Scheduller
+2013-06-17 08:50:23.270 AM	FormScheduller_Load	Start Scheduller
+2013-06-17 08:50:23.316 AM	cutoffscheduller	Start Cutoff
+2013-06-17 08:50:23.348 AM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-06-17 08:50:23.348 AM	cutoffscheduller	End Cutoff
+2013-06-17 08:50:23.348 AM	FormScheduller_Load	End Scheduller
+2013-06-17 10:05:24.081 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-17 10:07:53.423 AM	docutoff	Send Mail success
+2013-06-17 10:07:53.454 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-17 10:22:11.534 AM	DoWork	Done. Email sent(1)
+2013-06-17 10:25:07.109 AM	DoWork	Nothing to send.
+2013-06-17 10:25:44.961 AM	DoWork	Nothing to send.
+2013-06-17 10:26:02.201 AM	DoWork	Nothing to send.
+2013-06-17 10:33:04.978 AM	DoWork	Nothing to send.
+2013-06-17 10:34:36.682 AM	DoWork	Done. Email sent(1)
+2013-06-18 02:30:18.594 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-18 02:31:23.803 PM	docutoff	Send Mail success
+2013-06-18 02:31:23.819 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-18 03:26:31.306 PM	DoWork	Done. Email sent(1)
+2013-06-18 03:28:07.962 PM	DoWork	Done. Email sent(1)
+2013-06-18 03:31:04.433 PM	DoWork	Done. Email sent(1)
+2013-06-18 03:46:56.735 PM	DoWork	Done. Email sent(1)
+2013-06-18 03:48:19.286 PM	DoWork	Done. Email sent(1)
+2013-06-18 03:50:54.280 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-18 03:50:54.577 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-06-18 03:50:54.577 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-18 03:51:18.683 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-18 03:51:58.021 PM	docutoff	Send Mail success
+2013-06-18 03:51:58.115 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-18 03:54:10.502 PM	DoWork	Done. Email sent(1)
+2013-06-18 04:00:37.901 PM	DoWork	Nothing to send.
+2013-06-18 04:04:48.349 PM	DoWork	Done. Email sent(1)
+2013-06-18 04:06:12.431 PM	DoWork	Done. Email sent(1)
+2013-06-18 04:07:10.457 PM	DoWork	Done. Email sent(1)
+2013-06-18 04:34:44.029 PM	FormScheduller_Load	Start Scheduller
+2013-06-18 04:34:44.044 PM	cutoffscheduller	Start Cutoff
+2013-06-18 04:34:44.060 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-06-18 04:34:44.060 PM	cutoffscheduller	End Cutoff
+2013-06-18 04:34:44.060 PM	reminderscheduller	Start Reminder
+2013-06-18 04:34:44.091 PM	DoWork	Nothing to send.
+2013-06-18 04:34:44.091 PM	reminderscheduller	End Reminder
+2013-06-18 04:34:44.091 PM	orderCollectionscheduller	Start OrderCollection
+2013-06-18 04:34:44.107 PM	DoWork	Nothing to send.
+2013-06-18 04:34:44.107 PM	orderCollectionscheduller	End OrderCollection
+2013-06-18 04:34:44.107 PM	FormScheduller_Load	End Scheduller
+2013-06-28 09:51:38.520 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-28 09:52:08.851 AM	docutoff	Create Attachment Failed
+2013-06-28 09:52:08.851 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-06-28 09:52:27.552 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-06-28 09:53:36.128 AM	docutoff	Send Mail success
+2013-06-28 09:53:36.144 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-16 12:13:52.679 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-16 12:15:17.992 PM	docutoff	Send Mail success
+2013-07-16 12:15:17.992 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-16 04:34:11.489 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-16 04:34:11.489 PM	dowork	Not yet cutoff.
+2013-07-16 04:34:11.489 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-16 04:34:38.562 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-16 04:34:38.562 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-07-16 04:34:38.562 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-16 04:34:51.662 PM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-16 04:35:08.583 PM	docutoff	Send Mail success
+2013-07-16 04:35:08.583 PM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-16 04:40:15.231 PM	DoWork	Done. Email sent(13)
+2013-07-16 04:44:28.747 PM	DoWork	Done. Email sent(1)
+2013-07-17 09:53:30.943 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-17 09:53:30.974 AM	docutoff	No record to process
+2013-07-17 09:53:30.974 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-17 09:53:53.967 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-17 09:53:53.967 AM	docutoff	No record to process
+2013-07-17 09:53:53.967 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-17 09:55:16.859 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-17 09:55:29.107 AM	docutoff	Send Mail success
+2013-07-17 09:55:29.107 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-17 10:17:52.698 AM	FormSendQtyToGSHK_Load	Start Cutoff
+2013-07-17 10:17:52.698 AM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2013-07-17 10:17:52.698 AM	FormSendQtyToGSHK_Load	Finish Cutoff
+2013-07-17 10:25:34.182 AM	DoWork	Nothing to send.
+2013-07-17 10:25:58.507 AM	DoWork	Done. Email sent(1)
+2017-03-28 12:25:49.568 PM	FormScheduller_Load	Start Scheduller
+2017-03-28 12:26:02.840 PM	orderCollectionscheduller	Start OrderCollection
+2017-03-28 12:28:25.510 PM	FormScheduller_Load	Start Scheduller
+2017-03-28 12:28:36.555 PM	orderCollectionscheduller	Start OrderCollection
+2017-03-28 12:31:34.828 PM	orderCollectionscheduller	End OrderCollection
+2017-03-28 12:31:37.766 PM	FormScheduller_Load	End Scheduller
+2017-06-29 10:54:57.287 AM	FormScheduller_Load	Start Scheduller
+2017-06-29 10:55:42.593 AM	orderCollectionscheduller	Start OrderCollection
+2017-06-29 10:56:02.288 AM	DoWork	Nothing to send.
+2017-06-29 10:56:05.924 AM	orderCollectionscheduller	End OrderCollection
+2017-06-29 10:56:10.456 AM	FormScheduller_Load	End Scheduller
+2018-05-23 02:11:37.823 PM	FormScheduller_Load	Start Scheduller
+2018-05-23 02:11:49.899 PM	cutoffscheduller	Start Cutoff
+2018-05-23 02:11:55.969 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2018-05-23 02:12:17.194 PM	cutoffscheduller	End Cutoff
+2018-05-23 02:14:00.708 PM	reminderscheduller	Start Reminder
+2018-05-23 02:14:01.987 PM	DoWork	Nothing to send.
+2018-05-23 02:14:03.539 PM	reminderscheduller	End Reminder
+2018-05-23 02:14:08.268 PM	orderCollectionscheduller	Start OrderCollection
+2018-05-23 02:16:50.335 PM	FormScheduller_Load	Start Scheduller
+2018-05-23 02:18:37.349 PM	cutoffscheduller	Start Cutoff
+2018-05-23 02:19:47.186 PM	dowork	Email was not sent. If you want to send this Email, Please Update "Email Sent Status To Logistics" in System Parameters, set the value to False.
+2018-05-23 02:19:51.088 PM	cutoffscheduller	End Cutoff
+2018-05-23 02:20:07.948 PM	reminderscheduller	Start Reminder
+2018-05-23 02:20:22.679 PM	DoWork	Nothing to send.
+2018-05-23 02:20:26.774 PM	reminderscheduller	End Reminder
+2018-05-23 02:20:38.910 PM	orderCollectionscheduller	Start OrderCollection
+2018-05-23 02:29:52.329 PM	DoWork	Done. Email sent(0)
+2018-05-23 02:30:07.087 PM	orderCollectionscheduller	End OrderCollection
+2018-05-23 02:30:10.874 PM	FormScheduller_Load	End Scheduller
