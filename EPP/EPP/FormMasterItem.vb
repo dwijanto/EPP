@@ -289,12 +289,12 @@ Public Class FormMasterItem
         Dim myfilter As New StringBuilder
 
         If ToolStripTextBox1.Text <> "" Then
-            myfilter.Append("descriptionname like '*" & ToolStripTextBox1.Text & "*'")
-            myfilter.Append(" or refno like '*" & ToolStripTextBox1.Text & "*'")
-            myfilter.Append(" or productname like '*" & ToolStripTextBox1.Text & "*'")
-            myfilter.Append(" or brandname like '*" & ToolStripTextBox1.Text & "*'")
-            myfilter.Append(" or familyname like '*" & ToolStripTextBox1.Text & "*'")
-            myfilter.Append(" or producttypename like '*" & ToolStripTextBox1.Text & "*'")
+            myfilter.Append("descriptionname like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
+            myfilter.Append(" or refno like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
+            myfilter.Append(" or productname like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
+            myfilter.Append(" or brandname like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
+            myfilter.Append(" or familyname like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
+            myfilter.Append(" or producttypename like '*" & ToolStripTextBox1.Text.Replace("'", "''") & "*'")
             BS.Filter = myfilter.ToString
         Else
             BS.Filter = ""

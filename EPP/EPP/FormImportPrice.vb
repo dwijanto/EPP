@@ -226,7 +226,7 @@ Public Class FormImportPrice
                             'Brand
                             If myrecord(2).ToString <> "" Then
                                 Dim pkey0(0) As Object
-                                pkey0(0) = validstr(myrecord(2)).ToString.ToUpper
+                                pkey0(0) = myrecord(2).ToString.ToUpper
                                 myresult = DS.Tables(0).Rows.Find(pkey0)
                                 If IsNothing(myresult) Then
                                     'show errormessage
@@ -247,18 +247,20 @@ Public Class FormImportPrice
                             If myrecord(6).ToString <> "" Then
                                 Dim pkey1(0) As Object
                                 'pkey1(0) = validstr(myrecord(6))
-                                pkey1(0) = myrecord(6)
+                                'pkey3(0) = String.Format("A{0}A", validstr(myrecord(1)))
+                                'pkey1(0) = myrecord(6)
+                                pkey1(0) = String.Format("A{0}A", myrecord(6).ToUpper)
                                 myresult = DS.Tables(1).Rows.Find(pkey1)
                                 If IsNothing(myresult) Then
                                     Try
                                         Dim dr As DataRow = DS.Tables(1).NewRow
                                         descriptionseq += 1
                                         dr.Item(1) = descriptionseq
-                                        dr.Item(0) = myrecord(6)
+                                        dr.Item(0) = myrecord(6).ToUpper
                                         DS.Tables(1).Rows.Add(dr)
                                         descriptionid = descriptionseq
                                         'descriptionsb.Append(validstr(myrecord(6)) & vbCrLf)
-                                        descriptionsb.Append(myrecord(6) & vbCrLf)
+                                        descriptionsb.Append(myrecord(6).ToUpper & vbCrLf)
                                     Catch ex As Exception
                                         MessageBox.Show(ex.Message)
                                     End Try
@@ -290,16 +292,17 @@ Public Class FormImportPrice
                             'product
                             If myrecord(5).ToString <> "" Then
                                 Dim pkey4(0) As Object
-                                pkey4(0) = validstr(myrecord(5))
+                                'pkey4(0) = validstr(myrecord(5))
+                                pkey4(0) = String.Format("A{0}A", myrecord(5).ToUpper)
                                 myresult = DS.Tables(4).Rows.Find(pkey4)
                                 If IsNothing(myresult) Then
                                     Dim dr As DataRow = DS.Tables(4).NewRow
                                     productseq += 1
                                     dr.Item(1) = productseq
-                                    dr.Item(0) = myrecord(5)
+                                    dr.Item(0) = String.Format("A{0}A", myrecord(5).ToUpper)
                                     DS.Tables(4).Rows.Add(dr)
                                     productid = productseq
-                                    productsb.Append(validstr(myrecord(5)) & vbCrLf)
+                                    productsb.Append(validstr(myrecord(5).ToUpper) & vbCrLf)
                                 Else
                                     productid = myresult.Item(1)
                                 End If
@@ -308,16 +311,16 @@ Public Class FormImportPrice
                             'item
                             If myrecord(1).ToString <> "" Then
                                 Dim pkey3(0) As Object
-                                pkey3(0) = String.Format("A{0}A", validstr(myrecord(1)))
+                                pkey3(0) = String.Format("A{0}A", validstr(myrecord(1).ToUpper))
                                 myresult = DS.Tables(3).Rows.Find(pkey3)
                                 If IsNothing(myresult) Then
                                     Dim dr As DataRow = DS.Tables(3).NewRow
                                     itemseq += 1
                                     dr.Item(1) = itemseq
-                                    dr.Item(0) = String.Format("A{0}A", myrecord(1))
+                                    dr.Item(0) = String.Format("A{0}A", myrecord(1).ToUpper)
                                     DS.Tables(3).Rows.Add(dr)
                                     itemid = itemseq
-                                    itemsb.Append(validstr(myrecord(1)) & vbTab &
+                                    itemsb.Append(validstr(myrecord(1).ToUpper) & vbTab &
                                                   validlong(brandid.ToString) & vbTab &
                                                   validlong(familyid.ToString) & vbTab &
                                                   validlong(productid.ToString) & vbTab &
@@ -327,13 +330,17 @@ Public Class FormImportPrice
                                     itemid = myresult.Item(1)
                                 End If
                             End If
-
-                            itempricesb.Append(validint(itemid.ToString) & vbTab &
+                            If myrecord(7).ToString <> "" Then
+                                itempricesb.Append(validint(itemid.ToString) & vbTab &
                                       validreal(myrecord(7).ToString) & vbTab &
                                       validreal(myrecord(8).ToString) & vbTab &
                                       validreal(myrecord(9).ToString) & vbTab &
                                       DateFormatyyyyMMddString(myrecord(10).ToString) & vbTab &
                                       DateFormatyyyyMMddString(myrecord(11).ToString) & vbCrLf)
+                            Else
+                                Debug.Print("")
+                            End If
+                            
 
                         Next
                     Catch ex As Exception
@@ -481,24 +488,30 @@ Public Class FormImportPrice
     Private Function FillDataset(ByRef DS As DataSet, ByRef errmessage As String) As Boolean
         Dim myret As Boolean = False
         Dim Sqlstr As String = " select brandname,brandid  from shop.brand;" &
-                               " select descriptionname,descriptionid from shop.description;" &
+                               " select distinct 'A' || upper(descriptionname) || 'A' as descriptionname,descriptionid from shop.description;" &
                                " select familyname,familyid from shop.family;" &
-                               " select 'A' || refno || 'A' as refno,itemid from shop.item;" &
-                               " select productname,productid from shop.product;" &
+                               " select 'A' || upper(refno) || 'A' as refno,itemid from shop.item;" &
+                               " select 'A' || upper(productname) || 'A' as productname,max(productid) as productid from shop.product group by upper(productname) order by productid;" &
                                " select brandid from shop.brand order by brandid desc limit 1;" &
                                " select descriptionid from shop.description order by descriptionid desc limit 1;" &
                                " select itemid from shop.item order by itemid desc limit 1;" &
                                " select productid from shop.product order by productid desc limit 1;" &
                                " select producttypename,producttypeid from shop.producttype"
 
-
+        DS.CaseSensitive = True
         If DbAdapter1.GetDataSet(Sqlstr, DS, errmessage) Then
             DS.Tables(0).TableName = "brand"
             DS.Tables(1).TableName = "description"
             DS.Tables(2).TableName = "family"
             DS.Tables(3).TableName = "item"
             DS.Tables(4).TableName = "product"
-            DS.CaseSensitive = True
+            Using mystream As New StreamWriter("debug.txt")
+                For Each dr In DS.Tables(1).Rows
+                    mystream.WriteLine(String.Format("{0}{1}{2}", dr.Item(0).ToString, vbTab, dr.item(1).ToString))
+                Next
+
+            End Using
+           
 
             Dim idx0(0) As DataColumn
             idx0(0) = DS.Tables(0).Columns(0)

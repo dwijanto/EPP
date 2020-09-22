@@ -35,7 +35,7 @@ Class AcceptedOrder
         sb.Append(String.Format("Total Amount : {0:#,##0.00}{1}{1}", mytotal, vbCrLf))
 
         sb.Append(String.Format("Delivery to office on coming Tuesday dated {1}.{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("collectiondate"))))
-        sb.Append(String.Format("Please submit your check on or before {1}.{0}{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("chequesubmitdate"))))
+        sb.Append(String.Format("Please submit your cheque on or before {1}.{0}{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("chequesubmitdate"))))
         sb.Append(String.Format("Terms and Conditions :{0}", vbCrLf))
         sb.Append(String.Format("1.  Bounced cheque will be handled by Finance Department and charged for administration fee.{0}", vbCrLf))
         sb.Append(String.Format("2.  Unpaid item will not be delivered until payment settlement.{0}", vbCrLf))
@@ -77,7 +77,8 @@ Class AcceptedOrder
         sb.Append(vbCrLf)
         sb.Append(String.Format("<tr><td></td><td></td><td></td><td></td><td></td><td>Total Amount</td><td class=""right-align""> {0:#,##0.00}</td></tr></table>", mytotal, vbCrLf))
 
-        sb.Append(String.Format("<p>Delivery to office on coming Tuesday dated {1}.{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("collectiondate"))))
+        'sb.Append(String.Format("<p>Delivery to office on coming Tuesday dated {1}.{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("collectiondate"))))
+        sb.Append(String.Format("<p>Delivery to office on coming {2} dated {1}.{0}", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("collectiondate")), String.Format("{0:dddd}", cutoffdr.Item("collectiondate"))))
         sb.Append(String.Format("<br>Please submit your check on or before {1}.{0}{0}</p>", vbCrLf, String.Format("{0:MMM dd}", cutoffdr.Item("chequesubmitdate"))))
         sb.Append(String.Format("<p>Terms and Conditions :<br>"))
         sb.Append(String.Format("1.  Bounced cheque will be handled by Finance Department and charged for administration fee.<br>"))

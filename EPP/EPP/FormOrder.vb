@@ -888,7 +888,7 @@ Public Class FormOrder
                       " inner join shop.itemprice ip on ip.itempriceid = i.itemid" &
                       " where active " &
                       " group by mainitem,packageid,promotion) as foo on foo.mainitem = i.itemid" &
-                      " where pn.active and pn.promotionalitem and promotion)" &
+                      " where pn.active and pn.promotionalitem and promotion and not foo.retailprice isnull)" &
                        " union all" &
                        "(select i.*,pt.*,f.*,b.*,p.*,d.*,ip.*,1 as quantity,shop.validpromotion(promotionstartdate,promotionenddate," & DJLib.Dbtools.escapeString(HelperClass1.UserInfo.employeenumber) & ",ip.itempriceid) as promotion, shop.validprice(staffprice,promotionprice,promotionstartdate,promotionenddate," & DJLib.Dbtools.escapeString(HelperClass1.UserInfo.employeenumber) & ",ip.itempriceid) as validprice,null::bigint as packageid" &
                       " from shop.item i " &
@@ -919,7 +919,7 @@ Public Class FormOrder
                       " inner join shop.itemprice ip on ip.itempriceid = i.itemid" &
                       " where active " &
                       " group by mainitem,packageid) as foo on foo.mainitem = i.itemid" &
-                      " where pn.active and not pn.promotionalitem);")
+                      " where pn.active and not pn.promotionalitem and not foo.retailprice isnull);")
                 'History
         sqlstrSB.Append(String.Format(" select pd.pohdid,billrefno,orderdate,billingto,e.sn || ' ' || e.givenname as billingtoname,sum(shop.validamount(ph.status,pd.qty,pd.confirmedqty,pd.staffprice)) as totalamount , sum(pd.qty * pd.staffprice) as totalamountold,s.statusname,py.chequenumber,py.bankcode,ph.pohdid from shop.pohd ph" &
                " left join shop.employee e on e.employeenumber = ph.billingto" &

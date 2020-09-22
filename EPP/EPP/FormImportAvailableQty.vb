@@ -21,7 +21,7 @@ Public Class FormImportAvailableQty
             OpenFileDialog1.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*"
 
             If (OpenFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK) Then
-                mySelectedPath = OpenFileDialog1.FileName
+                myselectedPath = OpenFileDialog1.FileName
 
                 Try
                     myThread = New System.Threading.Thread(myThreadDelegate)

@@ -117,7 +117,7 @@
       <Value Profile="(Default)">ODBC;DSN=PostgreSQLHon10-0046D;</Value>
     </Setting>
     <Setting Name="con5" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Host=hon07nt;port=5432;database=hr</Value>
+      <Value Profile="(Default)">Host=hon17-0099L;port=5433;database=LogisticDb20190909</Value>
     </Setting>
     <Setting Name="con6" Type="System.String" Scope="User">
       <Value Profile="(Default)">Host=hon10-0046D;port=5433;database=LogisticDb20111202</Value>
